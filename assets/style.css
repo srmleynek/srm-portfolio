@@ -1,3 +1,30 @@
 * {
-    background-color: blueviolet;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow-color: RGB(252, 245, 202);
+    --orange-color: RGB(224, 159, 62);
+    --green-color: RGB(0, 102, 102);
+    --navy-color: RGB(0, 53, 102);
+}
+
+body {
+    background-color: var(--yellow-color);
+}
+
+header {
+    background-color: var(--navy-color);
+}
+
+header h1 {
+    background-color: var(--orange-color);
+    color: var(--green-color);
+}
+
+header nav a {
+   text-decoration: none; 
+   color: var(--orange-color);
 }
