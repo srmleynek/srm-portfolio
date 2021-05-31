@@ -5,26 +5,32 @@
 }
 
 :root {
-    --yellow-color: RGB(252, 245, 202);
-    --orange-color: RGB(224, 159, 62);
-    --green-color: RGB(0, 102, 102);
-    --navy-color: RGB(0, 53, 102);
+    --lightbkgr-color: RGB(252, 245, 202);
+    --highlight-color: RGB(224, 159, 62);
+    --middle-color: RGB(0, 102, 102);
+    --dark-color: RGB(0, 53, 102);
 }
 
 body {
-    background-color: var(--yellow-color);
+    background-color: var(--lightbkgr-color);
+    color: var(--middle-color);
 }
 
 header {
-    background-color: var(--navy-color);
+    background-color: var(--dark-color);
 }
 
 header h1 {
-    background-color: var(--orange-color);
-    color: var(--green-color);
+    background-color: var(--highlight-color);
+    color: var(--middle-color);
 }
 
 header nav a {
    text-decoration: none; 
-   color: var(--orange-color);
+   color: var(--highlight-color);
+}
+
+.contact-me ul li a, .contact-me ul li {
+    text-decoration: none;
+    color: var(--dark-color);
 }
