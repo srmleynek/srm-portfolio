@@ -75,6 +75,7 @@ header nav ul li a:hover {
 }
 /* Header End */
 
+
 /* about me start */
 .about-me {
     margin: 50px;
@@ -113,19 +114,65 @@ header nav ul li a:hover {
 
 /* work start */
 .work {
-    margin: 50px;
-    padding-bottom: 50px;
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    padding: 4em;
 }
 
 .work h2 {
     font-size: 46px;
     flex: 1 20%;
 }
+
+/* .work-info {
+    flex: 3 70%;
+    display: inline-flex;
+} */
+
+.gallery {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+figure {
+    margin: 3px;
+    overflow: hidden;
+    position: relative;
+    border: 5px solid var(--highlight-color);
+    transition: background-color .5s;
+}
+
+figure:hover {
+    background: var(--dark-color);
+}
+
+.gallery figure img {
+    width: calc(100% + 60px);
+    opacity: .9;
+    transform: translate3d(0, 20px, 0) scale(1.12);
+    transition: all .5s;
+}
+
+.gallery figure img:hover {
+    transform: translate3d(0,0,0) scale(1);
+    opacity: .4;
+}
+
+.gallery figure figcaption {
+    position: absolute;
+    padding: 1em 2em;
+    top: 0;
+    color: var(--middle-color);
+    text-align: center;
+}
+
+.gallery figure figcaption h3 {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background: var(--highlight-color);
+    display: inline-block;
+    padding: .5em .7em;
+}
+
 
 /* contact me start */
 .contact-me {
@@ -141,6 +188,11 @@ header nav ul li a:hover {
 .contact-me h2 {
     font-size: 46px;
     flex: 1 20%;
+}
+
+.contact-me-info {
+    flex: 3 70%;
+    display: inline-flex;
 }
 
 .contact-me ul {
